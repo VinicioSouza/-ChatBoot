@@ -17,7 +17,7 @@ mubBot.misc.Commands = "Comandos para ADMs da sala https://docs.google.com/docum
 mubBot.misc.Themes = "Dubstep, Remix's, and techno e variados";
 mubBot.misc.help = "Digite !regras para ler as regras da sala e !commands para ver os comandos do chatbot!" //What Help will say
 mubBot.misc.version = "1.0.8";
-mubBot.misc.origin = "Bot Editado para a sala [BEM]";
+mubBot.misc.origin = "Bot Editado para a sala Brazil Eletro Music【BEM】";
 mubBot.misc.changelog = "Adicionado uma verificação secundária para a história!!";
 mubBot.misc.ready = true;
 mubBot.misc.lockSkipping = false;
@@ -275,11 +275,11 @@ botMethods.djAdvanceEvent = function(data){
 
                     case "fb":
                         if(typeof command[1] == "undefined"){
-                            API.sendChat("Entre em nosso grupo e fique por dentro de todas nossas atualizações http://goo.gl/rlJWdQ");
+                            API.sendChat("Entre em nosso grupo e fique por dentro de todas nossas atualizações https://www.facebook.com/groups/brazileletromusic");
                         }else if(command[1].indexOf("@") > -1){
-                            API.sendChat(command[1]+" Entre em nosso grupo e fique por dentro de todas nossas atualizações http://goo.gl/rlJWdQ");
+                            API.sendChat(command[1]+" Entre em nosso grupo e fique por dentro de todas nossas atualizações https://www.facebook.com/groups/brazileletromusic");
                         }else{
-                            API.sendChat("Entre em nosso grupo e fique por dentro de todas nossas atualizações http://goo.gl/rlJWdQ");
+                            API.sendChat("Entre em nosso pag e fique por dentro de todas nossas atualizações https://www.facebook.com/eletromusicplugdj");
                         }
                         if(mubBot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
                             mubBot.misc.ready = false;
@@ -289,11 +289,11 @@ botMethods.djAdvanceEvent = function(data){
 
                     case "links":
                         if(typeof command[1] == "undefined"){
-                            API.sendChat("@" + data.from + " Grupo1: http://goo.gl/rlJWdQ Grupo2: http://goo.gl/dj3gYf Fanpage: http://goo.gl/vwyUEs");
+                            API.sendChat("@" + data.from + " Grupo: https://www.facebook.com/groups/brazileletromusic Fanpage: https://www.facebook.com/eletromusicplugdj");
                         }else if(command[1].toLowerCase().indexOf("plug.dj") === -1 && command[1].toLowerCase().indexOf("bug.dj") === -1){
                             API.sendChat("http://"+command[1]);
                         }else{
-                            API.sendChat("Grupo1: http://goo.gl/rlJWdQ Grupo2: http://goo.gl/dj3gYf Fanpage: http://goo.gl/vwyUEs");
+                            API.sendChat("Grupo: https://www.facebook.com/groups/brazileletromusic Fanpage: https://www.facebook.com/eletromusicplugdj");
                         }
                         if(mubBot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
                             mubBot.misc.ready = false;
@@ -472,7 +472,7 @@ botMethods.djAdvanceEvent = function(data){
                     break
                     
                     case "stoomper":
-                        API.sendChat(Foda-SE);
+                        API.sendChat(Peça ajuda as nossos administradores para mais ajudas !);
                     break
                     
                     case "commands":
@@ -481,7 +481,7 @@ botMethods.djAdvanceEvent = function(data){
                     break
                     
                     case "version":
-                        API.sendChat("Chatbot editado para a sala ★Electro House BR★™ " + mubBot.misc.version)
+                        API.sendChat("Chatbot editado para a sala Brazil Eletro Music【BEM】" + mubBot.misc.version)
                         if(mubBot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
                             mubBot.misc.ready = false;
                             setTimeout(function(){ mubBot.misc.ready = true; }, mubBot.settings.cooldown * 1000);
